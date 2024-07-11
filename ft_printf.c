@@ -6,12 +6,11 @@
 /*   By: thine <thine@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 15:50:19 by thine             #+#    #+#             */
-/*   Updated: 2024/07/04 20:13:19 by thine            ###   ########.fr       */
+/*   Updated: 2024/07/11 13:58:30 by thine            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include"printf.h"
-#include <stdarg.h>
+#include"printf.h"
 #include <unistd.h>
 static void	ft_putnbr(int n);
 static void	ft_putHex_upper(unsigned long long num);
@@ -92,7 +91,7 @@ static void	ft_putHex_upper(unsigned long long num)
 
 static void	ft_putHex_lower(unsigned long long num)
 {
-	if (num > 16)
+	if (num >= 16)
 	{
 		ft_putHex_lower(num / 16);
 		ft_putchr("0123456789abcdef"[num % 16]);
