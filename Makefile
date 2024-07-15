@@ -1,6 +1,7 @@
 NAME = libftprintf.a
 
-SRCS = ft_printf.c
+SRCS = ft_printf.c ft_putnbr.c ft_putchr.c ft_putstr.c ft_putpointa.c\
+	   ft_puthex_upper.c ft_puthex_lower.c
 
 CC = cc
 
